@@ -6,3 +6,6 @@ sudo -u postgres pg_ctl -D /Library/PostgreSQL/9.6/data start
 popd
 
 brew services restart redis
+
+sudo brew services restart nginx
+# Technically not a DB^!
