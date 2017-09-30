@@ -9,7 +9,7 @@ ensure_env;
 
 if [ ! -d "$STEREOSTREAM_API_DIR" ]; then
     mkdir -p "$STEREOSTREAM_API_DIR";
-    git clone https://github.com/stockrankr/stockrankr-rest-api "$STEREOSTREAM_API_DIR";
+    git clone https://github.com/stereostream/stereostream-rest-api "$STEREOSTREAM_API_DIR";
     update_deps "$STEREOSTREAM_API_DIR";
 else
     if need_git_update "$STEREOSTREAM_API_DIR"; then
