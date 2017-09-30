@@ -2,8 +2,8 @@
 # sudo -u postgres
 
 if [ -z "$REST_PASS" ]; then
-	>&2 echo "REST_PASS is undefined"
-	exit 2
+    >&2 echo "REST_PASS is undefined"
+    exit 2
 fi
 
 POSTGRES_DB_USER="${POSTGRES_DB_USER:-'streamerus'}";
