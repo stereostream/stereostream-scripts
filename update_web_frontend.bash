@@ -19,4 +19,4 @@ else
     fi
 fi
 
-echo "Press ENTER to close";
+echo "Press ENTER to close (finished updating web frontend)";

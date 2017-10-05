@@ -7,3 +7,4 @@ bash "$DIR/kill_all.bash"
 
 bash "$DIR/update_web_frontend.bash"
 bash "$DIR/update_api.bash"
+bash "$DIR/update_scripts.bash"
