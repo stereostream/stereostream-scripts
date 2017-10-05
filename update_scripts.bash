@@ -7,6 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ensure_env
 STEREOSTREAM_SCRIPTS_DIR="$STEREOSTREAM_DIR/stereostream-scripts"
+
 if [ ! -d "$STEREOSTREAM_SCRIPTS_DIR" ]; then
     mkdir -p "$STEREOSTREAM_SCRIPTS_DIR";
     git clone https://github.com/stereostream/stereostream-scripts "$STEREOSTREAM_SCRIPTS_DIR";

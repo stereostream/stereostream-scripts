@@ -21,5 +21,5 @@ no_nginx && sudo brew services start nginx
 #pushd "$STEREOSTREAM_WEB_DIR"
 #npm start &
 private_ip=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
-open -a Firefox "http://$private_ip"
+gsleep 1m && open -a Firefox "http://$private_ip"
 #popd

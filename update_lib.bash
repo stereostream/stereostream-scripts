@@ -37,3 +37,5 @@ function need_git_update() {
 
     return "$res"
 }
+
+ensure_env
