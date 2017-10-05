@@ -12,7 +12,7 @@ popd
 
 brew services restart redis
 ensure_env
-cp "$HOME/repos/stereostream/stereostream-scripts/nginx.full.conf" /usr/local/etc/nginx/nginx.conf
+sed "s/\$USER/$USER/g" "$HOME/repos/stereostream/stereostream-scripts/nginx.full.conf" > /usr/local/etc/nginx/nginx.conf
 chown $USER:admin /usr/local/etc/nginx/nginx.conf
 chmod 644 /usr/local/etc/nginx/nginx.conf
 sudo mkdir -p /var/www/static
