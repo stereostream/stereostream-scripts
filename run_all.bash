@@ -12,11 +12,12 @@ tsc
 npm start &
 popd
 
-exec 6<>/dev/tcp/127.0.0.1/80 || no_nginx=1
+nginx=true
+exec 6<>/dev/tcp/127.0.0.1/80 || nginx=false
 exec 6>&- # close output connection
 exec 6<&- # close input connection
 
-no_nginx && sudo brew services start nginx
+! nginx && sudo brew services start nginx
 
 #pushd "$STEREOSTREAM_WEB_DIR"
 #npm start &
