@@ -7,5 +7,8 @@ popd
 
 brew services restart redis
 
+cp "$HOME/repos/stereostream/stereostream-scripts/nginx.full.conf" /usr/local/etc/nginx/nginx.conf
+chown $USER:admin /usr/local/etc/nginx/nginx.conf
+chmod 644 /usr/local/etc/nginx/nginx.conf
 sudo brew services restart nginx
 # Technically not a DB^!
