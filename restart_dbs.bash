@@ -19,5 +19,6 @@ sudo mkdir -p /var/www/static
 sudo rm -f /var/www/static/stereostream-angular-dist
 sudo chown -R $USER:wheel "$STEREOSTREAM_WEB_DIST_DIR"
 sudo ln -s "$STEREOSTREAM_WEB_DIST_DIR" /var/www/static/stereostream-angular-dist
+bash "$DIR/secure_nginx.bash"
 sudo brew services restart nginx
 # Technically not a DB^!
